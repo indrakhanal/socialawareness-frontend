@@ -40,9 +40,9 @@ function Login(props: Props): ReactElement {
       
         const errorMessage = loginres?.message?.detail 
         toast.error(errorMessage);
-        setTimeout(() => {
-          window.location.reload()
-        }, 2000);
+        // setTimeout(() => {
+        //   window.location.reload()
+        // }, 2000);
     
         // Configure(errorMessage, loginres?.status)
       }
