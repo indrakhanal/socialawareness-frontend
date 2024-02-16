@@ -112,7 +112,7 @@ const LoginForm = ({ authorizing, handleLogin }: LoginFormProps) => {
         <h6 className="mb-2 font-bold">LOGIN PORTAL</h6>
 
         <div className="auth-form">
-          <div className="form-group align-vertical">
+          <div className="form-group align-vertical responsive-email">
             <label htmlFor="" className="mr-4 label">
               Email    
             </label>
@@ -122,7 +122,6 @@ const LoginForm = ({ authorizing, handleLogin }: LoginFormProps) => {
               value={values.email}
               onChange={handleChange}
               required
-              style={{ marginLeft:"27px"}}
             />
             <FormikValidationError name="email" errors={errors} touched={touched} />
           </div>
