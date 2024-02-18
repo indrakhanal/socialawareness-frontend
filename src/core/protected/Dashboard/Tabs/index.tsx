@@ -17,13 +17,13 @@ const MultiTabMenu: React.FC = () => {
     
   }, [dispatch]);
   return (
-    <div className='row'>
+    <div className='row' id='causebusiness'>
       <Tabs>
         <TabList>
           <Tab>Cause</Tab>
           <Tab>Business</Tab>
-          <Tab>Participation</Tab>
-          <Tab>Others</Tab>
+          {/* <Tab>Participation</Tab>
+          <Tab>Others</Tab> */}
         </TabList>
 
         <TabPanel>
@@ -40,7 +40,7 @@ const MultiTabMenu: React.FC = () => {
           <TabContent data={userProfile} options='business'/>
           {/* Add your content for Tab 2 here */}
         </TabPanel>
-        <TabPanel>
+        {/* <TabPanel>
           <h2>Latest List of Participations</h2>
           <small>Latest List of Participations!</small>
           <hr />
@@ -50,7 +50,7 @@ const MultiTabMenu: React.FC = () => {
           <h2>Latest List of Other any things</h2>
           <small>Latest List of Other any things</small>
           <hr />
-        </TabPanel>
+        </TabPanel> */}
       </Tabs>
     </div>
   );

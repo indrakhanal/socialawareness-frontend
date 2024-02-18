@@ -96,6 +96,7 @@ const AppHeader: React.FC<AppHeaderProps> = ({ data }) => {
           <div className="logo-container">
             <img src={acsImage} alt="ACS Logo" />
           </div>
+          <div className="nav-container">
           <li className="current">
             <a className="smoothscroll" href="#home">
               Home
@@ -107,20 +108,26 @@ const AppHeader: React.FC<AppHeaderProps> = ({ data }) => {
             </a>
           </li>
           <li>
+            <a className="smoothscroll" href="#causebusiness">
+              cause & business
+            </a>
+          </li>
+          <li>
             <a className="smoothscroll" href="#contact">
               Contact
             </a>
           </li>
           <li>
-            <button onClick={handleShowModal}>
+            <a style={{cursor:'pointer'}} onClick={handleShowModal}>
               Profile
-            </button>
+            </a>
           </li>
           <li>
-            <button onClick={() => dispatch(logoutAction())}>
+            <a style={{cursor:'pointer'}} onClick={() => dispatch(logoutAction())}>
               LOGOUT
-            </button>
+            </a>
           </li>
+        </div>
         </ul>
       </nav>
       <div className="row banner">
@@ -129,8 +136,8 @@ const AppHeader: React.FC<AppHeaderProps> = ({ data }) => {
           <br />
           <h2>{name}</h2>
           <br/><br/>
-          <button onClick={OpenCausesModal} className="btn btn-primary mr-2">Join a Cause</button>
-          <button onClick={OpenBusinessModal} className="btn btn-secondary mr-2">Explore Businesses</button>
+          <button onClick={OpenCausesModal} className="btn btn-primary mr-4">Add Cause</button>
+          <button onClick={OpenBusinessModal} className="btn btn-secondary mr-4">Add Businesses</button>
         </div>
       </div>
       <p className="scrolldown">

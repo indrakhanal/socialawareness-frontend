@@ -152,7 +152,6 @@ const BusinessModal: React.FC<MyModalProps> = ({ show, onHide, editBusinessData 
                 placeholder="Enter contact Person Name"
                 value={contactPerson}
                 onChange={(e) => setcontactPerson(e.target.value)}
-                autoFocus
                 required
               />
             </Form.Group>
@@ -163,18 +162,16 @@ const BusinessModal: React.FC<MyModalProps> = ({ show, onHide, editBusinessData 
                 placeholder="Enter contact person's phone number"
                 value={contactPhone}
                 onChange={(e) => setcontactPhone(e.target.value)}
-                autoFocus
                 required
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput4">
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput">
               <Form.Label>Contact Email</Form.Label>
               <Form.Control
                 type="email"
                 placeholder="Enter Contact Email"
                 value={contactEmail}
                 onChange={(e) => setcontactEmail(e.target.value)}
-                autoFocus
                 required
               />
             </Form.Group>

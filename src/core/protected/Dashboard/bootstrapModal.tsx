@@ -176,7 +176,7 @@ const MyModal: React.FC<MyModalProps> = ({ show, data, onHide, editData }) => {
   return (
     <div>
 
-      <Modal show={show} onHide={onHide}>
+      <Modal show={show} onHide={onHide} className='custom-modal-style'>
         <Modal.Header>
           <Modal.Title>Mine Activities</Modal.Title>
         </Modal.Header>

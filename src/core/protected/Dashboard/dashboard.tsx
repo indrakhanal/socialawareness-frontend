@@ -6,6 +6,7 @@ import MultitabBody from './Tabs/index'
 import AppFooter from './Footer/footer'
 import ReactGA from "react-ga"
 import $ from "jquery"
+import './dashboard.scss'
 
 interface AppProps {}
 
@@ -49,8 +50,8 @@ class App extends Component<AppProps, AppState> {
     return (
       <div className="App">
           <AppHeader data={this.state.siteData.main} />
-          <MultitabBody />
           <Campaign data={this.state.siteData.main} />
+          <MultitabBody />
           <Contact data={this.state.siteData.main} />
           {/* <AppFooter /> */}
         </div>
